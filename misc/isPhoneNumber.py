@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
-
 # RegEx Chap. 7
+
 
 def isPhoneNumber(text):
     if len(text) != 12:
@@ -8,7 +8,7 @@ def isPhoneNumber(text):
     for i in range(0, 3):
         if not text[i].isdecimal():
             return False
-    if text [3] != '-':
+    if text[3] != '-':
         return False
     for i in range(4, 7):
         if not text[i].isdecimal():
@@ -26,4 +26,3 @@ for i in range(len(message)):
     if isPhoneNumber(chunk):
         print('Phone number found: ' + chunk)
 print('Done')
-

@@ -5,6 +5,12 @@
 import re
 
 def remspace(string):
-	print(string.strip())
-	
-remspace('   here is the   ')
+    global stringrem
+    bspaceRegex = re.compile(r'\s*$')
+    fspaceRegex = re.compile(r'^\s*')
+    stringrem = bspaceRegex.sub('', string)
+    stringrem = fspaceRegex.sub('', stringrem)
+    return stringrem
+
+remspace('    here is the string    ')
+print(stringrem)

@@ -4,7 +4,6 @@
 # Password Strength Tester
 
 import re
-import sys
 
 def passStrengthTest(passWord):
     lowerRegex = re.compile(r'[a-z]')
@@ -28,6 +27,4 @@ def passStrengthTest(passWord):
 print('What is your password?')
 passW = input()
 passStrengthTest(passW)
-
-sys.exit()
 

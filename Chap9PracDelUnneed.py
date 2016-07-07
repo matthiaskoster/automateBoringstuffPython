@@ -1,4 +1,4 @@
-#!python
+#!/usr/bin/env python3
 
 # Chapter 9 Practice Selective Copy
 # Walks through a directory tree searching for files > 100MB and deletes them.
@@ -15,5 +15,5 @@ def deleteUnneeded(folder):
             #os.unlink(filename) #Commented out to protect against accidental deletion
             print('Deleting ' + filename + '...') #Print only to verify working correctly
 
-deleteUnneeded('/Users/mlotspaih/Documents')
+deleteUnneeded('/Users/username/Documents')
 print('Done')

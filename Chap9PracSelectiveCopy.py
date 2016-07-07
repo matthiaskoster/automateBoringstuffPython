@@ -13,7 +13,7 @@ def selectiveCopy(folder):
             if not filename.endswith('.pdf'):
                 continue
             #shutil.copy(filename, 'c:\\pdffolder') #Commented out to protect against accidental copying
-            print('Copying ' + filename + '...')
+            print('Copying ' + filename + '...') #Print only to verify working correctly
 
-selectiveCopy(r'C:\Users\mlotspaih\Desktop')
+selectiveCopy(r'C:\Users\username\pdffolder')
 print('Done')

@@ -1,7 +1,7 @@
 #! python3
 
 # Chapter 15 Project Super Stopwatch
-# stopwatch.py - Simple Stop Watch Program
+# Simple Stop Watch Program
 
 import time
 

@@ -1,4 +1,5 @@
 #! python3
+#! /usr/bin/env python3
 
 # Chapter 15 Project Super Stopwatch
 # Simple Stop Watch Program

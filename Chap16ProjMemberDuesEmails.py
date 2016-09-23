@@ -26,7 +26,7 @@ smtpObj.ehlo()
 smtpObj.login('myemail@address.com', sys.argv[1])
 
 for name, email in unpaidMembers.items():
-    body = "Subject: %s dues unpaid.\nDear %s,\nRecords indicate that you have not paid dues for %s. Please pay ASAP! Thanks!" % (latestMonth, name, latestMonth)
+    body = "Subject: %s dues unpaid.\n\nDear %s,\nRecords indicate that you have not paid dues for %s. Please pay ASAP! Thanks!" % (latestMonth, name, latestMonth)
     print('Sending email to %s...' % email)
     sendmailStatus = smtpObj.sendmail('myemail@address.com', email, body)
     if sendmailStatus != {}:
